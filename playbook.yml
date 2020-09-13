@@ -19,7 +19,7 @@
       - ansible_distribution == "CentOS"
     - name: pull image docker
       docker_image:
-        name: "{{ item }} "
+        name: "{{ image }} "
         state: present
         force: yes
     - name: create container
